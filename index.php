@@ -27,7 +27,12 @@
 
 <div id="answer">
 <form name="formName" action="account.html">
-		<input type="text" maxlength="6" id="input6" name="input6" oninput="check(this)">		
+		<input type="text" maxlength="1" id="input1" oninput="check(this, document.formName.input2)">		
+		<input type="text" maxlength="1" id="input2" oninput="check(this, document.formName.input3)">	
+		<input type="text" maxlength="1" id="input3" oninput="check(this, document.formName.input4)">	
+		<input type="text" maxlength="1" id="input4" oninput="check(this, document.formName.input5)">	
+		<input type="text" maxlength="1" id="input5" oninput="check(this, document.formName.input6)">	
+		<input type="text" maxlength="1" id="input6" oninput="check(this, document.formName.input6)">		
 </form>
 </div>
 
@@ -37,41 +42,58 @@
 </div>
 
 <div id="groen">
-<p class="p1">ZWEDEN</p>
-<p class="p2">IS CORRECT</p>
-<br>
-<p class="p2">DOORGAAN</p>
+	<div class="content-melding">
+		<p id="p4"></p>
+		<p class="p2">IS CORRECT</p>
+		<p class="p2 knop" onclick="...">DOORGAAN</p>
+	</div>
+</div>
+
+<div id="rood">
+	<div class="content-melding">
+		<p id="p42"></p>
+		<p class="p2">IS INCORRECT</p>
+		<p class="p2 knop" onclick="opnieuw()">PROBEER OPNIEUW</p>
+	</div>
 </div>
 
 </body>
 </html>
 <script type="text/javascript">
 
-function check(field) {
+function check(field, to) {
  
+ 			    if (field.getAttribute && field.value.length==field.getAttribute("maxlength")) 
+			    {
+			        to.focus() 
+			    }
 
 
-
-  var jan = field.value;
+  var jan = input1.value + input2.value + input3.value + input4.value + input5.value + input6.value;
  console.log(jan);
+
+ var piet = jan.toUpperCase();
 
 
 if (jan.length == 6) {
 
-if (jan == "zweden" || jan == "Zweden" || jan == "ZWEDEN") {
-	document.getElementById("input6").style.color = "green";
+if (piet == "ZWEDEN") {
+	document.getElementById("p4").innerHTML = piet;
 	document.activeElement.blur();
 	$("#groen").fadeIn(1000);
 } else {
-	document.getElementById("input6").style.borderBottom = "2px solid red";
+
+	document.activeElement.blur();
+	$("#rood").fadeIn(1000);
+	document.getElementById("p42").innerHTML = piet;
+	document.getElementById("input1").style.color = "red";
+	document.getElementById("input2").style.color = "red";
+	document.getElementById("input3").style.color = "red";
+	document.getElementById("input4").style.color = "red";
+	document.getElementById("input5").style.color = "red";
 	document.getElementById("input6").style.color = "red";
-	document.getElementById("doorgaan").style.display = "none";
 }
 
-} else {
-	document.getElementById("input6").style.color = "black";
-	document.getElementById("input6").style.borderBottom = "2px solid black";
-	document.getElementById("doorgaan").style.display = "none";
 }
 
 
@@ -85,10 +107,26 @@ function achmed() {
 
 $(document).ready(function() {
   setTimeout(function() {
-    document.getElementById("koek2").style.display = "block";
+    $("#koek2").fadeIn(1000);
   }, 5000);
 });
 
+function opnieuw() {
+	$("#rood").fadeOut(1000);
 
+	document.getElementById("input1").style.color = "black";
+	document.getElementById("input2").style.color = "black";
+	document.getElementById("input3").style.color = "black";
+	document.getElementById("input4").style.color = "black";
+	document.getElementById("input5").style.color = "black";
+	document.getElementById("input6").style.color = "black";
+
+	document.getElementById("input1").value = "";
+	document.getElementById("input2").value = "";
+	document.getElementById("input3").value = "";
+	document.getElementById("input4").value = "";
+	document.getElementById("input5").value = "";
+	document.getElementById("input6").value = "";
+}
 
 </script>
