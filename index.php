@@ -23,9 +23,12 @@
 
 <div id="answer">
 		<form name="formName" action="account.html">
-			<input type="text" maxlength="6" id="input6" name="input6" oninput="check(this)">			
+			<input type="text" maxlength="6" id="input6" name="input6" oninput="check(this)">		
 </form>
 </div>
+
+<div id="groen"></div>
+<div id="red"></div>
 </body>
 </html>
 <script type="text/javascript">
@@ -33,7 +36,29 @@
 function check(field) {
  
 
-  console.log(field.value);
+
+
+  var jan = field.value;
+ console.log(jan);
+
+if (jan.length == 6) {
+
+if (jan == "zweden") {
+	document.getElementById("input6").style.color = "green";
+} else {
+	document.getElementById("input6").style.borderBottom = "2px solid red";
+	document.getElementById("input6").value = '';
+	document.getElementById("input6").style.color = "black";
 }
+
+} else {
+	document.getElementById("input6").style.color = "black";
+	document.getElementById("input6").style.borderBottom = "2px solid black";
+}
+
+
+}
+
+
 
 </script>
