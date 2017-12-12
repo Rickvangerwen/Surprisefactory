@@ -35,9 +35,7 @@ background-image: radial-gradient(ellipse farthest-corner at center, #454545 0%,
     margin: auto;
     width: 90%;
     height: 300px;
-    margin-top: 20px;
     position: relative;
-    padding: 40px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -47,26 +45,26 @@ background-image: radial-gradient(ellipse farthest-corner at center, #454545 0%,
 	padding-top: 4px;
 
 	margin: 10px auto;
-	margin-top: 30px;
 	max-width: 260px;
-	-webkit-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
-	-moz-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
-	box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
 	text-align: center;
 	box-sizing: border-box;
 
 }
 
 input[type=text] {
+	border-radius: 5px;
 	margin-top: 8px;
 	font-size: 20px;
     width: 40px;
     height: 40px;
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px solid grey;
     text-transform: uppercase;
     text-align: center;
+
+    	-webkit-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
+	-moz-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
+	box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
 }
 
 #groen {
@@ -121,10 +119,12 @@ p.p2.knop {
     padding: 5px 10px;
     font-weight: bold;
     border-radius: 5px;
+    border-bottom: 2px solid #CC0000;
 }
 
  #groen p.p2.knop {
     background-color: green;
+    border-bottom: 2px solid #006600;
 }
 
 #groen #p4 {
@@ -168,8 +168,8 @@ p.p2.knop {
 }
 
 #koek{
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	position: absolute;
@@ -179,11 +179,14 @@ p.p2.knop {
 	background: white;
 	text-align: center;
 	opacity: 0.3;
+	border-radius: 5px;
+	border-bottom: 2px solid #cccccc;
+	border-right: 1px solid #cccccc;
 }
 
 #koek2{
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	position: absolute;
@@ -193,13 +196,16 @@ p.p2.knop {
 	background: white;
 	text-align: center;
 	display: none;
+	border-radius: 5px;
+	border-bottom: 2px solid #cccccc;
+	border-right: 1px solid #cccccc;
 }
 
 #koek p {
 	color: black;
 	padding: 0;
 	margin: 0;
-	font-size: 20px;
+	font-size: 30px;
 	margin-top: 3px;
 }
 
@@ -207,7 +213,7 @@ p.p2.knop {
 	color: black;
 	padding: 0;
 	margin: 0;
-	font-size: 20px;
+	font-size: 30px;
 	margin-top: 3px;
 }
 
@@ -240,4 +246,12 @@ p.p2.knop {
     -webkit-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
     -moz-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
     box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
+}
+
+.logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 40px;
+	margin: 10px;
 }

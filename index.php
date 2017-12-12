@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Quiz</title>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<script src="https://code.jquery.com/jquery-latest.js"></script>
@@ -20,13 +21,20 @@
 <body>
 
 <div id="app">
+
+	<img class="logo" src="loho.png">
+
+<div class="content-melding">
 <div id="hint">
+
 <img id="imgg" src="b.jpg">
 <img id="imgg2" src="b.jpg">
 </div>
 
+
 <div id="answer">
-<form name="formName" action="account.html">
+
+<form name="formName">
 		<input type="text" maxlength="1" id="input1" oninput="check(this, document.formName.input2)">		
 		<input type="text" maxlength="1" id="input2" oninput="check(this, document.formName.input3)">	
 		<input type="text" maxlength="1" id="input3" oninput="check(this, document.formName.input4)">	
@@ -35,9 +43,10 @@
 		<input type="text" maxlength="1" id="input6" oninput="check(this, document.formName.input6)">		
 </form>
 </div>
+</div>
 
-<div id="koek"><p>HINT</p></div>
-<div id="koek2" onclick="achmed()"><p>HINT</p></div>
+<div id="koek"><p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p></div>
+<div id="koek2" onclick="achmed()"><p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p></div>
 
 </div>
 
@@ -108,7 +117,7 @@ function achmed() {
 $(document).ready(function() {
   setTimeout(function() {
     $("#koek2").fadeIn(1000);
-  }, 5000);
+  }, 60000);
 });
 
 function opnieuw() {
