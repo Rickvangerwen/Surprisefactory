@@ -4,34 +4,43 @@
 }
 
 body {
-
-background-image: -ms-radial-gradient(center, ellipse farthest-corner, #454545 0%, #000000 100%);
-
-background-image: -moz-radial-gradient(center, ellipse farthest-corner, #454545 0%, #000000 100%);
-
-background-image: -o-radial-gradient(center, ellipse farthest-corner, #454545 0%, #000000 100%);
-
-background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #454545), color-stop(100, #000000));
-
-background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #454545 0%, #000000 100%);
-
-background-image: radial-gradient(ellipse farthest-corner at center, #454545 0%, #000000 100%);
-
 	padding: 0;
 	margin: 0;
 	font-family: Foco;
+
 	height: 100%;
 	overflow: hidden;
+
+	background-image: -ms-radial-gradient(center, ellipse farthest-corner, #454545 0%, #000000 100%);
+	background-image: -moz-radial-gradient(center, ellipse farthest-corner, #454545 0%, #000000 100%);
+	background-image: -o-radial-gradient(center, ellipse farthest-corner, #454545 0%, #000000 100%);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #454545), color-stop(100, #000000));
+	background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #454545 0%, #000000 100%);
+	background-image: radial-gradient(ellipse farthest-corner at center, #454545 0%, #000000 100%);
 }
 
-#app {
+#app-kader {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
 
-#hint {
-    z-index: 2;
+.logo {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	height: 40px;
+}
+
+.content-midden {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%) translatey(-50%);
+}
+
+.hint-kader {
     margin: auto;
     width: 90%;
     height: 300px;
@@ -40,15 +49,25 @@ background-image: radial-gradient(ellipse farthest-corner at center, #454545 0%,
     text-align: center;
 }
 
-#answer {
-	z-index: 3;
-	padding-top: 4px;
+.hint-afb {
+    position: absolute;
 
-	margin: 10px auto;
-	max-width: 260px;
+    left: 50%;
+    width: 100%;
+    max-width: 220px;
+    margin-left: -110px;
+
+    -webkit-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
+    box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
+}
+
+
+
+.antwoord-kader {
+	margin: auto;
 	text-align: center;
-	box-sizing: border-box;
-
+	max-width: 90%;
 }
 
 input[type=text] {
@@ -57,117 +76,22 @@ input[type=text] {
 	font-size: 20px;
     width: 40px;
     height: 40px;
+
+    margin-left: 1px;
+    margin-right: 1px;
+
     box-sizing: border-box;
     border: none;
+
     text-transform: uppercase;
     text-align: center;
 
-    	-webkit-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
 	-moz-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
 	box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
 }
 
-#groen {
-	z-index: 5;
-	background-color: rgba(0, 0, 0, 0.8);
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	display: none;
-}
-
-#rood {
-	z-index: 5;
-	background-color: rgba(0, 0, 0, 0.8);
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	display: none;
-}
-
-.content-melding {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%) translatey(-50%);
-}
-
-.p1 {
-	padding: 0;	
-	margin-top: 200px;
-	color: green;
-	margin-bottom: 10px;
-	font-size: 30px;
-}
-
-.p2 {
-    padding: 0;
-    color: white;
-    margin: 10px;
-}
-
-p.p2.knop {
-    display: inline-block;
-    background: red;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    border-bottom: 2px solid #CC0000;
-}
-
- #groen p.p2.knop {
-    background-color: green;
-    border-bottom: 2px solid #006600;
-}
-
-#groen #p4 {
-    color: green;
-}
-
-#p4 {
-    padding: 0;
-    color: green;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-#p42 {
-    padding: 0;
-    color: red;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-#red {
-	background-color: red;
-	opacity: 0.4;
-	display: none;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-#doorgaan {
-	margin: 10px auto;
-	margin-top: 30px;
-	background-color: green;
-
-	height: 100px;
-	width: 100px;
-	border-radius: 50px;
-	display: none;
-}
-
-#koek{
+.hint {
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-top: 5px;
@@ -184,74 +108,55 @@ p.p2.knop {
 	border-right: 1px solid #cccccc;
 }
 
-#koek2{
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+.hint p {
+	color: black;
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	margin-top: 3px;
+}
+
+.melding-kader {
+	z-index: 5;
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	bottom: 0;
-	right: 0;
-	margin: 10px;
-	background: white;
-	text-align: center;
-	display: none;
-	border-radius: 5px;
-	border-bottom: 2px solid #cccccc;
-	border-right: 1px solid #cccccc;
-}
-
-#koek p {
-	color: black;
-	padding: 0;
-	margin: 0;
-	font-size: 30px;
-	margin-top: 3px;
-}
-
-#koek2 p {
-	color: black;
-	padding: 0;
-	margin: 0;
-	font-size: 30px;
-	margin-top: 3px;
-}
-
-#koek2:hover {
-	cursor: pointer;
-}
-
-#imgg {
-    z-index: 1;
-    transform: rotate(7deg);
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    max-width: 220px;
-    margin-left: -110px;
-    -webkit-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
-    -moz-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
-    box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
-}
-
-#imgg2 {
-    z-index: 1;
-    transform: rotate(-7deg);
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    max-width: 220px;
-    margin-left: -110px;
-    display: none;
-    -webkit-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
-    -moz-box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
-    box-shadow: 7px 7px 33px 0px rgba(0,0,0,0.28);
-}
-
-.logo {
-	position: absolute;
 	left: 0;
-	top: 0;
-	height: 40px;
-	margin: 10px;
+	display: none;
 }
+
+.antwoord-kop {
+    padding: 0;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.antwoord-subkop {
+    padding: 0;
+    color: white;
+    margin: 10px;
+}
+
+.antwoord-knop{
+    display: inline-block;
+    background: red;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-bottom: 2px solid #CC0000;
+    color: white;
+}
+
+.antwoord-text {
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+
+
