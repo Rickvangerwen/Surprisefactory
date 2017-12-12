@@ -23,9 +23,11 @@
 
 <div id="answer">
 		<form name="formName" action="account.html">
-			<input type="text" maxlength="6" id="input6" name="input6" oninput="check(this)">		
+		<input type="text" maxlength="6" id="input6" name="input6" oninput="check(this)">		
 </form>
 </div>
+
+<div id="doorgaan">Doorgaan</div>
 
 <div id="groen"></div>
 <div id="red"></div>
@@ -45,15 +47,17 @@ if (jan.length == 6) {
 
 if (jan == "zweden") {
 	document.getElementById("input6").style.color = "green";
+	document.getElementById("doorgaan").style.display = "block";
 } else {
 	document.getElementById("input6").style.borderBottom = "2px solid red";
-	document.getElementById("input6").value = '';
-	document.getElementById("input6").style.color = "black";
+	document.getElementById("input6").style.color = "red";
+	document.getElementById("doorgaan").style.display = "none";
 }
 
 } else {
 	document.getElementById("input6").style.color = "black";
 	document.getElementById("input6").style.borderBottom = "2px solid black";
+	document.getElementById("doorgaan").style.display = "none";
 }
 
 
