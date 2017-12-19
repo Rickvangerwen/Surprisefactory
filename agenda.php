@@ -21,11 +21,8 @@
 
 		<div class="content-midden">
 
-		<h1>WELKOM RICK</h1>
-		<p class="textie">De eerste test heb je doorstaan, vanaf nu gaat het echt beginnen.
-		Voor jou is een cadeau uitgekozen, maar om te achterhalen wat dit inhoudt, zal je er zelf achter moeten komen.
-		</p>
-		<p class="antwoord-knop" style="background-color: green; border-bottom: 2px solid #006600;" onclick="link()">START HIER</p>
+		<h1>BINNENKORT BESCHIKBAAR</h1>
+
 
 		</div>
 

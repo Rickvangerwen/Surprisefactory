@@ -21,11 +21,18 @@
 
 		<div class="content-midden">
 
-		<h1>WELKOM RICK</h1>
-		<p class="textie">De eerste test heb je doorstaan, vanaf nu gaat het echt beginnen.
-		Voor jou is een cadeau uitgekozen, maar om te achterhalen wat dit inhoudt, zal je er zelf achter moeten komen.
-		</p>
-		<p class="antwoord-knop" style="background-color: green; border-bottom: 2px solid #006600;" onclick="link()">START HIER</p>
+				<div class="hint-kader">
+
+					<img id="hint-afb1" class="hint-afb2" style="transform: rotate(7deg);" src="zweden.jpg">
+					
+				</div>
+
+
+		<h1 style="margin-top: -10px;">JIJ GAAT ...</h1>
+		<p class="textie">... op een vijfdaagse trip naar Zweden om daar samen met een professioneel team te gaan zalm vissen. </p>
+		<p class="antwoord-knop" style="background-color: green; border-bottom: 2px solid #006600;" onclick="link()">PLAN JE CADEAU NU</p><br>
+		<p class="textie2" onclick="link()">Of liever toch een andere keer.</p>
+
 
 		</div>
 
@@ -49,7 +56,7 @@ function link() {
 
     setTimeout(function() {
 
-        window.location.href = "index.php";
+        window.location.href = "agenda.php";
 
     }, 1000);	
 

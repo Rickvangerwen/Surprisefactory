@@ -1,19 +1,19 @@
 var surprisefactory = new Object();
 
 // VERANDER HIER JE ANTWOORD TOT MAX 12 LETTERS
-var antwoord = "zweden";
+var antwoord = "NICK";
 
 // verander de afbeelding van hint1
-var afbeeldingHint1 = "paperclip.jpg";
+var afbeeldingHint1 = "vis.jpg";
 
 // verander de afbeelding van hint2
-var afbeeldingHint2 = "mors2.jpg";
+var afbeeldingHint2 = "code.jpg";
 
 // Tijd wanneer de hint verschijnt.
 var tijd = 600;
 
 // Link naar volgende pagina
-var link = "next3.php";
+var link = "next2.php";
 
 var lengte = antwoord.length;
 
