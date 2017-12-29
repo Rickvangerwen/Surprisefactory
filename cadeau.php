@@ -28,7 +28,7 @@
 				</div>
 
 
-		<h1 style="margin-top: -10px;">JIJ GAAT ...</h1>
+		<h1 class="hoofdie" style="margin-top: -10px;">JIJ GAAT ...</h1>
 		<p class="textie">... op een vijfdaagse trip naar Zweden om daar samen met een professioneel team te gaan zalm vissen. </p>
 		<p class="antwoord-knop" style="background-color: green; border-bottom: 2px solid #006600;" onclick="link()">PLAN JE CADEAU NU</p><br>
 		<p class="textie2" onclick="link()">Of liever toch een andere keer.</p>
