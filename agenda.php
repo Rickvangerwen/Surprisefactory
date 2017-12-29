@@ -21,7 +21,7 @@
 
 		<div class="content-midden">
 
-		<h1>BINNENKORT BESCHIKBAAR</h1>
+		<h1 class="hoofdie">BINNENKORT BESCHIKBAAR</h1>
 
 
 		</div>
