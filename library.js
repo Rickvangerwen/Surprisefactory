@@ -4,13 +4,13 @@ var surprisefactory = new Object();
 var antwoord = "zweden";
 
 // verander de afbeelding van hint1
-var afbeeldingHint1 = "paperclip.jpg";
+var afbeeldingHint1 = "paperclip2.jpg";
 
 // verander de afbeelding van hint2
-var afbeeldingHint2 = "mors2.jpg";
+var afbeeldingHint2 = "mors3.jpg";
 
 // Tijd wanneer de hint verschijnt.
-var tijd = 600;
+var tijd = 60000;
 
 // Link naar volgende pagina
 var link = "next3.php";

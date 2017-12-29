@@ -1,16 +1,16 @@
 var surprisefactory = new Object();
 
 // VERANDER HIER JE ANTWOORD TOT MAX 12 LETTERS
-var antwoord = "NICK";
+var antwoord = "hgzf";
 
 // verander de afbeelding van hint1
 var afbeeldingHint1 = "vis.jpg";
 
 // verander de afbeelding van hint2
-var afbeeldingHint2 = "code.jpg";
+var afbeeldingHint2 = "schroef.jpg";
 
 // Tijd wanneer de hint verschijnt.
-var tijd = 600;
+var tijd = 60000;
 
 // Link naar volgende pagina
 var link = "next2.php";

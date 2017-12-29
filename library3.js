@@ -7,10 +7,10 @@ var antwoord = "700";
 var afbeeldingHint1 = "zaklamp.jpg";
 
 // verander de afbeelding van hint2
-var afbeeldingHint2 = "licht.jpg";
+var afbeeldingHint2 = "lampjes.jpg";
 
 // Tijd wanneer de hint verschijnt.
-var tijd = 600;
+var tijd = 60000;
 
 // Link naar volgende pagina
 var link = "cadeau.php";

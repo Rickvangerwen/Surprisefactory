@@ -174,10 +174,12 @@ body {
 	display: none;
 }
 
-#hh h1 {
+.hoofdie {
 	color: white;
 	text-align: center;
 	font-family: Foco;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .textie {

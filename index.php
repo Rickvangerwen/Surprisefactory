@@ -21,7 +21,7 @@
 
 		<div class="content-midden">
 
-		<h1>WELKOM RICK</h1>
+		<h1 class="hoofdie">WELKOM ..</h1>
 		<p class="textie">De eerste test heb je doorstaan, vanaf nu gaat het echt beginnen.
 		Voor jou is een cadeau uitgekozen, maar om te achterhalen wat dit inhoudt, zal je er zelf achter moeten komen.
 		</p>
@@ -49,7 +49,7 @@ function link() {
 
     setTimeout(function() {
 
-        window.location.href = "index.php";
+        window.location.href = "next1.php";
 
     }, 1000);	
 
